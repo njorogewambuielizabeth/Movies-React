@@ -9,8 +9,7 @@ const FetchMovies = ({ searchResults }) => {
   const [movies, setMovies] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [selectedCategoryName, setSelectedCategoryName] = useState("All");
-  const [selectedMovie, setSelectedMovie] = useState(null); // State to store the selected movie for displaying details
-
+  const [selectedMovie, setSelectedMovie] = useState(null); 
   useEffect(() => {
     (async () => {
       const movies = await getMovies();
@@ -40,7 +39,7 @@ const FetchMovies = ({ searchResults }) => {
 
   return (
     <div>
-      {selectedCategoryName !== "All" && <h1>{selectedCategoryName} Movies</h1>}
+  
 
       <CategoryFilter
         selectedCategory={selectedCategory}

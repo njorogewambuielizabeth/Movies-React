@@ -44,6 +44,7 @@
 
 .search input {
   padding: 8px;
+  padding-right: 600px;
   border: none;
   border-radius: 4px 0 0 4px;
   outline: none;

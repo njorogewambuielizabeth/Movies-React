@@ -13,7 +13,7 @@ function App() {
       <DisplayMovies/>
       <Routes>
         <Route path='/' element={<FetchMovies />}/>
-        <Route path='/movies/:movieId' element={<MovieDetails />}/>
+        <Route path='/movies/:movieId' element={<MovieDetails/>}/>
       </Routes>
       </BrowserRouter>
     </div>
